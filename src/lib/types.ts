@@ -11,4 +11,6 @@ export interface Event {
   checkedIn: number;
   feedback: number[]; // Array of scores from 1 to 5
   deadline: string; // ISO date string
+  collegeId: string;
+  collegeName: string;
 }

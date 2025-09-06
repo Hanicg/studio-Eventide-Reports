@@ -2,7 +2,7 @@
 
 import { AppSidebar } from "@/components/common/AppSidebar";
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
-import { LayoutDashboard } from "lucide-react";
+import { LayoutDashboard, PlusCircle } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
@@ -14,6 +14,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       label: "Dashboard",
       icon: <LayoutDashboard />,
       isActive: pathname.startsWith("/admin/dashboard"),
+    },
+    {
+      href: "/admin/create-event",
+      label: "Create Event",
+      icon: <PlusCircle />,
+      isActive: pathname.startsWith("/admin/create-event"),
     },
   ];
 

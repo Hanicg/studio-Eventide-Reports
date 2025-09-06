@@ -57,6 +57,7 @@ export function EventDataTable() {
             <TableHeader>
               <TableRow>
                 <TableHead>Event</TableHead>
+                <TableHead>College</TableHead>
                 <TableHead>Date</TableHead>
                 <TableHead className="text-center">Status</TableHead>
                 <TableHead className="text-right">Registrations</TableHead>
@@ -73,6 +74,7 @@ export function EventDataTable() {
                 return (
                   <TableRow key={event.id}>
                     <TableCell className="font-medium">{event.name}</TableCell>
+                    <TableCell>{event.collegeName}</TableCell>
                     <TableCell>{format(new Date(event.date), 'MMM dd, yyyy')}</TableCell>
                     <TableCell className="text-center">
                         <Badge variant="outline" className="flex items-center justify-center gap-2 w-24">

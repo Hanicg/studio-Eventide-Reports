@@ -14,6 +14,8 @@ export const events: Event[] = [
     checkedIn: 410,
     feedback: [5, 5, 4, 5, 4, 4, 5, 3, 5],
     deadline: '2024-08-01T23:59:59Z',
+    collegeId: 'C001',
+    collegeName: 'Stanford University'
   },
   {
     id: 'event-2',
@@ -28,6 +30,8 @@ export const events: Event[] = [
     checkedIn: 80,
     feedback: [5, 5, 5, 4, 5, 5],
     deadline: '2024-09-01T23:59:59Z',
+    collegeId: 'C002',
+    collegeName: 'MIT'
   },
   {
     id: 'event-3',
@@ -42,6 +46,8 @@ export const events: Event[] = [
     checkedIn: 95,
     feedback: [4, 3, 4, 5, 3, 4, 4],
     deadline: '2024-09-20T23:59:59Z',
+    collegeId: 'C001',
+    collegeName: 'Stanford University'
   },
   {
     id: 'event-4',
@@ -56,6 +62,8 @@ export const events: Event[] = [
     checkedIn: 55,
     feedback: [5, 4, 5, 5, 4],
     deadline: '2024-09-28T23:59:59Z',
+    collegeId: 'C003',
+    collegeName: 'Johns Hopkins University'
   },
   {
     id: 'event-5',
@@ -70,5 +78,7 @@ export const events: Event[] = [
     checkedIn: 10,
     feedback: [],
     deadline: '2024-11-15T23:59:59Z',
+    collegeId: 'C002',
+    collegeName: 'MIT'
   },
 ];
