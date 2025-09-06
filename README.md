@@ -6,19 +6,21 @@ From browsing and registering for events to analyzing attendance trends and gene
 
 ## Key Features
 
-Eventide Reports is split into two main user experiences: one for students and one for administrators.
+Eventide Reports is split into two main user experiences: one for students and one for an administrator.
 
 ### Student Portal
 
 - **Browse Events**: Students can explore a visually rich list of all upcoming events, complete with descriptions, dates, and locations.
 - **Simple Registration**: A one-click registration system allows students to sign up for events effortlessly.
 - **My Registrations**: A dedicated page where students can view all the events they have registered for.
+- **Event Check-in**: On the day of an event, students can check-in directly from their registration list.
+- **Submit Feedback**: After an event has concluded, students can provide a 1-5 star rating to share their experience.
 - **Profile Management**: Students can view and update their personal and college information on their own profile page.
 
 ### Admin Portal
 
 - **Comprehensive Dashboard**: The admin dashboard offers a high-level overview of key metrics, including total events, total registrations, and overall attendance rates.
-- **Detailed Event Performance**: A data table provides a granular look at each event's performance, showing registration numbers against targets, attendance percentages, and average feedback scores.
+- **Detailed Event Performance**: A data table provides a granular look at each event's performance, showing registration numbers against targets, live attendance percentages, and average feedback scores.
 - **Create & Manage Events**: Administrators have the ability to add new events to the system through an intuitive form, including details like event name, date, location, description, and target registration numbers.
 - **Intelligent Alerting Tool**: Leveraging AI, this tool analyzes registration trends for any event. If an event is at risk of undersubscription, the system automatically drafts an alert email for the administrator, suggesting actionable steps to boost participation.
 
