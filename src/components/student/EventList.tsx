@@ -1,18 +1,18 @@
 "use client";
 
-import { useState } from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { events } from "@/lib/data";
 import { Calendar, MapPin, Ticket, Check } from 'lucide-react';
 import { format } from 'date-fns';
+import { useRegistration } from "@/contexts/RegistrationContext";
 
 export function EventList() {
-    const [registeredEvents, setRegisteredEvents] = useState<Set<string>>(new Set());
+    const { registeredEvents, addRegistration } = useRegistration();
 
     const handleRegister = (eventId: string) => {
-        setRegisteredEvents(prev => new Set(prev).add(eventId));
+        addRegistration(eventId);
     };
 
     return (
