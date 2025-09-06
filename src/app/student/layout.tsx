@@ -16,7 +16,7 @@ export default function StudentLayout({ children }: { children: React.ReactNode 
       isActive: pathname.startsWith("/student/dashboard"),
     },
     {
-      href: "#", // Placeholder for future page
+      href: "/student/registrations",
       label: "My Registrations",
       icon: <Ticket />,
       isActive: pathname.startsWith("/student/registrations"),

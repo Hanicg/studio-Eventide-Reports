@@ -46,6 +46,14 @@ export function LoginForm({ title, description, icon, dashboardPath }: LoginForm
               </Button>
             </Link>
           </form>
+          {!isAdmin && (
+             <div className="mt-4 text-center text-sm">
+              Don't have an account?{" "}
+              <Link href="#" className="underline">
+                Sign up
+              </Link>
+            </div>
+          )}
           <Alert className="mt-4">
             <Info className="h-4 w-4" />
             <AlertDescription className="text-xs">
