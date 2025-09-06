@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Info } from "lucide-react";
 
 interface LoginFormProps {
   title: string;
@@ -16,6 +18,8 @@ interface LoginFormProps {
 }
 
 export function LoginForm({ title, description, icon, dashboardPath }: LoginFormProps) {
+  const isAdmin = title.toLowerCase().includes('admin');
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-background">
       <Card className="w-full max-w-sm mx-4">
@@ -42,6 +46,14 @@ export function LoginForm({ title, description, icon, dashboardPath }: LoginForm
               </Button>
             </Link>
           </form>
+          <Alert className="mt-4">
+            <Info className="h-4 w-4" />
+            <AlertDescription className="text-xs">
+              <strong>Sample credentials:</strong><br />
+              Email: {isAdmin ? 'admin@example.com' : 'student@example.com'}<br />
+              Password: {isAdmin ? 'admin123' : 'student123'}
+            </AlertDescription>
+          </Alert>
           <div className="mt-4 text-center text-sm">
             <Link href="/" className="underline">
               Back to Home
