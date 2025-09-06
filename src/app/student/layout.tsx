@@ -2,7 +2,7 @@
 
 import { AppSidebar } from "@/components/common/AppSidebar";
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
-import { Calendar, Ticket } from "lucide-react";
+import { Calendar, Ticket, User } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function StudentLayout({ children }: { children: React.ReactNode }) {
@@ -20,6 +20,12 @@ export default function StudentLayout({ children }: { children: React.ReactNode 
       label: "My Registrations",
       icon: <Ticket />,
       isActive: pathname.startsWith("/student/registrations"),
+    },
+    {
+      href: "/student/profile",
+      label: "My Profile",
+      icon: <User />,
+      isActive: pathname.startsWith("/student/profile"),
     },
   ];
 
