@@ -49,7 +49,7 @@ export function LoginForm({ title, description, icon, dashboardPath }: LoginForm
           {!isAdmin && (
              <div className="mt-4 text-center text-sm">
               Don't have an account?{" "}
-              <Link href="#" className="underline">
+              <Link href="/signup/student" className="underline">
                 Sign up
               </Link>
             </div>
